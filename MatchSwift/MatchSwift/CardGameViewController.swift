@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CardGameViewController: UIViewController {
     
     @lazy var deck = PlayingCardDeck()
     var flipCount: Int = 0 {

@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5D15E0BC193ECF5D00096F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0BB193ECF5D00096F52 /* AppDelegate.swift */; };
-		5D15E0BE193ECF5D00096F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0BD193ECF5D00096F52 /* ViewController.swift */; };
+		5D15E0BE193ECF5D00096F52 /* CardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0BD193ECF5D00096F52 /* CardGameViewController.swift */; };
 		5D15E0C1193ECF5D00096F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D15E0BF193ECF5D00096F52 /* Main.storyboard */; };
 		5D15E0C3193ECF5D00096F52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D15E0C2193ECF5D00096F52 /* Images.xcassets */; };
 		5D15E0CF193ECF5D00096F52 /* MatchSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0CE193ECF5D00096F52 /* MatchSwiftTests.swift */; };
-		5D15E0DF193ED76000096F52 /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0DD193ED76000096F52 /* card.swift */; };
-		5D15E0E0193ED76000096F52 /* deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0DE193ED76000096F52 /* deck.swift */; };
-		5D95A443193F8B44003B8EA4 /* playingcarddeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95A442193F8B44003B8EA4 /* playingcarddeck.swift */; };
-		5D996DD1193EEE450067D534 /* playingcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D996DD0193EEE450067D534 /* playingcard.swift */; };
+		5D15E0DF193ED76000096F52 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0DD193ED76000096F52 /* Card.swift */; };
+		5D15E0E0193ED76000096F52 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15E0DE193ED76000096F52 /* Deck.swift */; };
+		5D95A443193F8B44003B8EA4 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95A442193F8B44003B8EA4 /* PlayingCardDeck.swift */; };
+		5D996DD1193EEE450067D534 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D996DD0193EEE450067D534 /* PlayingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,16 +32,16 @@
 		5D15E0B6193ECF5D00096F52 /* MatchSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D15E0BA193ECF5D00096F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D15E0BB193ECF5D00096F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D15E0BD193ECF5D00096F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D15E0BD193ECF5D00096F52 /* CardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameViewController.swift; sourceTree = "<group>"; };
 		5D15E0C0193ECF5D00096F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D15E0C2193ECF5D00096F52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D15E0C8193ECF5D00096F52 /* MatchSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D15E0CD193ECF5D00096F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D15E0CE193ECF5D00096F52 /* MatchSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSwiftTests.swift; sourceTree = "<group>"; };
-		5D15E0DD193ED76000096F52 /* card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = card.swift; path = Model/card.swift; sourceTree = "<group>"; };
-		5D15E0DE193ED76000096F52 /* deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = deck.swift; path = Model/deck.swift; sourceTree = "<group>"; };
-		5D95A442193F8B44003B8EA4 /* playingcarddeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playingcarddeck.swift; path = Model/playingcarddeck.swift; sourceTree = "<group>"; };
-		5D996DD0193EEE450067D534 /* playingcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playingcard.swift; path = Model/playingcard.swift; sourceTree = "<group>"; };
+		5D15E0DD193ED76000096F52 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
+		5D15E0DE193ED76000096F52 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Model/Deck.swift; sourceTree = "<group>"; };
+		5D95A442193F8B44003B8EA4 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCardDeck.swift; path = Model/PlayingCardDeck.swift; sourceTree = "<group>"; };
+		5D996DD0193EEE450067D534 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		5D15E0B8193ECF5D00096F52 /* MatchSwift */ = {
 			isa = PBXGroup;
 			children = (
-				5D15E0BD193ECF5D00096F52 /* ViewController.swift */,
+				5D15E0BD193ECF5D00096F52 /* CardGameViewController.swift */,
 				5D15E0BF193ECF5D00096F52 /* Main.storyboard */,
 				5D15E0D8193ED04600096F52 /* Model */,
 				5D15E0B9193ECF5D00096F52 /* Supporting Files */,
@@ -121,10 +121,10 @@
 		5D15E0D8193ED04600096F52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5D15E0DD193ED76000096F52 /* card.swift */,
-				5D15E0DE193ED76000096F52 /* deck.swift */,
-				5D996DD0193EEE450067D534 /* playingcard.swift */,
-				5D95A442193F8B44003B8EA4 /* playingcarddeck.swift */,
+				5D15E0DD193ED76000096F52 /* Card.swift */,
+				5D15E0DE193ED76000096F52 /* Deck.swift */,
+				5D996DD0193EEE450067D534 /* PlayingCard.swift */,
+				5D95A442193F8B44003B8EA4 /* PlayingCardDeck.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -228,11 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D996DD1193EEE450067D534 /* playingcard.swift in Sources */,
-				5D15E0E0193ED76000096F52 /* deck.swift in Sources */,
-				5D15E0BE193ECF5D00096F52 /* ViewController.swift in Sources */,
-				5D95A443193F8B44003B8EA4 /* playingcarddeck.swift in Sources */,
-				5D15E0DF193ED76000096F52 /* card.swift in Sources */,
+				5D996DD1193EEE450067D534 /* PlayingCard.swift in Sources */,
+				5D15E0E0193ED76000096F52 /* Deck.swift in Sources */,
+				5D15E0BE193ECF5D00096F52 /* CardGameViewController.swift in Sources */,
+				5D95A443193F8B44003B8EA4 /* PlayingCardDeck.swift in Sources */,
+				5D15E0DF193ED76000096F52 /* Card.swift in Sources */,
 				5D15E0BC193ECF5D00096F52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
