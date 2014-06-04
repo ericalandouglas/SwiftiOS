@@ -25,9 +25,8 @@ class Deck {
     }
     
     func drawRandomCard() -> Card {
-        let index: Int = Int(arc4random()) % self.cards.count
-        let card: Card = self.cards.removeAtIndex(index)
-        return card
+        let index = Int(arc4random()) % self.cards.count
+        return self.cards.removeAtIndex(index)
     }
     
 }

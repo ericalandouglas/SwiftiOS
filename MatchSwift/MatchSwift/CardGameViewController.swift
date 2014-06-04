@@ -17,7 +17,6 @@ class CardGameViewController: UIViewController {
         }
     }
     @IBOutlet var flipLabel : UILabel
-    @IBOutlet var cardButton : UIButton
 
     @IBAction func touchCard(sender : UIButton) {
         ++self.flipCount
@@ -26,10 +25,10 @@ class CardGameViewController: UIViewController {
             sender.setTitle(nil, forState: UIControlState.Normal)
         } else {
             if self.deck.cards.count == 0 {
-                cardButton.enabled = false
+                sender.enabled = false
                 --self.flipCount
             } else {
-                let card: Card = self.deck.drawRandomCard()
+                let card = self.deck.drawRandomCard()
                 sender.setBackgroundImage(UIImage(named: "cardfront"), forState: UIControlState.Normal)
                 sender.setTitle(card.contents, forState: UIControlState.Normal)
             }
