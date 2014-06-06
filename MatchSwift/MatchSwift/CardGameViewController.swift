@@ -16,9 +16,10 @@ class CardGameViewController: UIViewController {
             self.flipLabel.text = "Flips: \(self.flipCount)"
         }
     }
-    @IBOutlet var flipLabel : UILabel
+    
+    @IBOutlet var flipLabel: UILabel    
 
-    @IBAction func touchCard(sender : UIButton) {
+    @IBAction func touchCard(sender: UIButton) {
         ++self.flipCount
         if sender.currentTitle {
             sender.setBackgroundImage(UIImage(named: "cardback"), forState: UIControlState.Normal)

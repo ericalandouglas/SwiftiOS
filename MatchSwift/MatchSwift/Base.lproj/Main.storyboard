@@ -59,12 +59,12 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="flipLabel" destination="Jdl-oM-baX" id="UTu-JU-V30"/>
+                        <outlet property="flipLabel" destination="Jdl-oM-baX" id="P3m-SO-nMN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="312"/>
+            <point key="canvasLocation" x="220" y="268"/>
         </scene>
     </scenes>
     <resources>
