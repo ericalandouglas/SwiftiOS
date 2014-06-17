@@ -17,15 +17,37 @@ class Album {
     let largeImageURL: String?
     let itemURL: String?
     let artistURL: String?
+    let collectionId: Int?
     
-    init(name: String!, artist: String!, price: String!, thumbnailImageURL: String!, largeImageURL: String!, itemURL: String!, artistURL: String!) {
+    init(dict: NSDictionary!) {
+        var name = dict["trackName"] as? String
+        if !name? {
+            name = dict["collectionName"] as? String
+        }
         self.title = name
-        self.artist = artist
+        self.artist = dict["artistName"] as? String
+        // price comes in as formattedPrice or as collectionPrice or as a float
+        var price = dict["formattedPrice"] as? String
+        if !price? {
+            price = dict["collectionPrice"] as? String
+            if !price? {
+                var priceFloat = dict["collectionPrice"] as? Float
+                var nf = NSNumberFormatter()
+                nf.maximumFractionDigits = 2;
+                price = priceFloat? ? "$"+nf.stringFromNumber(priceFloat) : "No price"
+            }
+        }
         self.price = price
-        self.thumbnailImageURL = thumbnailImageURL
-        self.largeImageURL = largeImageURL
+        self.thumbnailImageURL = dict["artworkUrl60"] as? String
+        self.largeImageURL = dict["artworkUrl100"] as? String
+        var itemURL = dict["collectionViewUrl"] as? String
+        if !itemURL? {
+            itemURL = dict["trackViewUrl"] as? String
+        }
         self.itemURL = itemURL
-        self.artistURL = artistURL
+        let optArtistURL = dict["artistViewUrl"] as? String
+        self.artistURL = optArtistURL? ? optArtistURL : "No artist URL"
+        self.collectionId = dict["collectionId"] as? Int
     }
     
 }

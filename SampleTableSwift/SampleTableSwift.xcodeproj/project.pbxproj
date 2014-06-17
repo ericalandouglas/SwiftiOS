@@ -13,6 +13,8 @@
 		5D12FB2E19422A0300382918 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D12FB2D19422A0300382918 /* Images.xcassets */; };
 		5D12FB3A19422A0400382918 /* SampleTableSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D12FB3919422A0400382918 /* SampleTableSwiftTests.swift */; };
 		5D12FB441942343700382918 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D12FB431942343700382918 /* APIController.swift */; };
+		5DBCE30E194FE81300F2E584 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBCE30D194FE81300F2E584 /* Track.swift */; };
+		5DBCE31019500BA900F2E584 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBCE30F19500BA900F2E584 /* TrackCell.swift */; };
 		5DFD7FB9194637C400A9F23D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFD7FB8194637C400A9F23D /* Album.swift */; };
 		5DFD7FBB1946468800A9F23D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFD7FBA1946468800A9F23D /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		5D12FB3819422A0400382918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D12FB3919422A0400382918 /* SampleTableSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableSwiftTests.swift; sourceTree = "<group>"; };
 		5D12FB431942343700382918 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		5DBCE30D194FE81300F2E584 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		5DBCE30F19500BA900F2E584 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		5DFD7FB8194637C400A9F23D /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		5DFD7FBA1946468800A9F23D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				5D12FB2A19422A0300382918 /* Main.storyboard */,
+				5D12FB431942343700382918 /* APIController.swift */,
 				5D12FB2819422A0300382918 /* SearchResultsViewController.swift */,
 				5DFD7FBA1946468800A9F23D /* DetailsViewController.swift */,
-				5D12FB431942343700382918 /* APIController.swift */,
+				5DBCE30F19500BA900F2E584 /* TrackCell.swift */,
+				5DBCE30D194FE81300F2E584 /* Track.swift */,
 				5DFD7FB8194637C400A9F23D /* Album.swift */,
 				5D12FB2D19422A0300382918 /* Images.xcassets */,
 				5D12FB2419422A0300382918 /* Supporting Files */,
@@ -217,11 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DBCE31019500BA900F2E584 /* TrackCell.swift in Sources */,
 				5D12FB2919422A0300382918 /* SearchResultsViewController.swift in Sources */,
 				5D12FB2719422A0300382918 /* AppDelegate.swift in Sources */,
 				5D12FB441942343700382918 /* APIController.swift in Sources */,
 				5DFD7FB9194637C400A9F23D /* Album.swift in Sources */,
 				5DFD7FBB1946468800A9F23D /* DetailsViewController.swift in Sources */,
+				5DBCE30E194FE81300F2E584 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SampleTableSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SampleTableSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
